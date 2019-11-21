@@ -3,11 +3,11 @@ class Triangle
 
   def initialize(a, b, c)
     case self
-    when a == 0 || b == 0 || c == 0
+    if a == 0 || b == 0 || c == 0
       raise TriangleError
-    end
+    elsif a == b && a == c
       @kind = :equilateral
-
+    elsif
     end
   end
 
