@@ -12,6 +12,7 @@ class Triangle
     elsif (a == b || b == c || a == c)
       @kind = :isosceles
     elsif (a !=b && a != c && b != c)
+      @kind = :scalene
     end
   end
 
