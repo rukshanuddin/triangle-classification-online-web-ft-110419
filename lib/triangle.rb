@@ -3,12 +3,13 @@ class Triangle
 
   def initialize(a, b, c)
 
-    if a == 0 || b == 0 || c == 0
+    if a <= 0 || b <= 0 || c <= 0
       raise TriangleError
     elsif a == b && a == c
       @kind = :equilateral
-    elsif (a == b || b == c)
+    elsif (a == b || b == c || a == c)
       @kind = :isosceles
+    elsif (a !=b && a != c && b != c)
     end
   end
 
