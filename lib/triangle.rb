@@ -7,7 +7,8 @@ class Triangle
       raise TriangleError
     elsif a == b && a == c
       @kind = :equilateral
-
+    elsif (a == b || b == c)
+      @kind = :isosceles
     end
   end
 
